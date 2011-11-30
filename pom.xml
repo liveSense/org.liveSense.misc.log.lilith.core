@@ -55,8 +55,62 @@
 							org.eclipse.jetty.server;resolution:=optional,
 							org.eclipse.jetty.util.component;resolution:=optional,
 							org.mortbay.jetty;resolution:=optional,
-							sun.reflect;resolution:=optional
+							sun.reflect;resolution:=optional,							
+							com.ibm.icu.text;resolution:=optional,
+							com.jgoodies.forms.layout;resolution:=optional,
+							com.lowagie.text;resolution:=optional,
+							com.lowagie.text.pdf;resolution:=optional,
+							com.publicobject.issuesbrowser;resolution:=optional,
+							com.publicobject.misc;resolution:=optional,
+							com.sun.java.swing.plaf.windows;resolution:=optional,
+							de.kupzog.ktable;resolution:=optional,
+							jline;resolution:=optional,
+							junit.framework;resolution:=optional,
+							junit.textui;resolution:=optional,
+							net.sf.nachocalendar;resolution:=optional,
+							net.sf.nachocalendar.components;resolution:=optional,
+							org.apache.bsf;resolution:=optional,
+							org.apache.bsf.util;resolution:=optional,
+							org.apache.commons.cli;resolution:=optional,
+							org.apache.ivy;resolution:=optional,
+							org.apache.ivy.core.cache;resolution:=optional,
+							org.apache.ivy.core.event;resolution:=optional,
+							org.apache.ivy.core.module.descriptor;resolution:=optional,
+							org.apache.ivy.core.module.id;resolution:=optional,
+							org.apache.ivy.core.report;resolution:=optional,
+							org.apache.ivy.core.resolve;resolution:=optional,
+							org.apache.ivy.core.settings;resolution:=optional,
+							org.apache.ivy.plugins.resolver;resolution:=optional,
+							org.apache.log4j.spi;resolution:=optional,
+							org.apache.tools.ant;resolution:=optional,
+							org.apache.tools.ant.dispatch;resolution:=optional,
+							org.apache.tools.ant.helper;resolution:=optional,
+							org.apache.tools.ant.taskdefs;resolution:=optional,
+							org.apache.tools.ant.types;resolution:=optional,
+							org.apache.tools.ant.util;resolution:=optional,
+							org.eclipse.jface.viewers;resolution:=optional,
+							org.eclipse.swt.events;resolution:=optional,
+							org.eclipse.swt.graphics;resolution:=optional,
+							org.eclipse.swt.layout;resolution:=optional,
+							org.eclipse.swt.widgets;resolution:=optional,
+							org.fusesource.jansi;resolution:=optional,
+							org.hibernate;resolution:=optional,
+							org.hibernate.collection;resolution:=optional,
+							org.hibernate.engine;resolution:=optional,
+							org.hibernate.persister.collection;resolution:=optional,
+							org.hibernate.usertype;resolution:=optional,
+							org.jdesktop.swingx;resolution:=optional,
+							org.jdesktop.swingx.decorator;resolution:=optional,
+							org.jdesktop.swingx.table;resolution:=optional,
+							org.jfree.data;resolution:=optional,
+							org.jfree.data.category;resolution:=optional,
+							org.jfree.data.general;resolution:=optional,
+							org.joda.time;resolution:=optional,
+							org.joda.time.format;resolution:=optional,
+							org.sektor37.minium;resolution:=optional,
+							sun.nio.ch;resolution:=optional,
 						</Import-Package>
+						<!--  
 						<Embed-Dependency>
 							logback-core,
 							logback-classic,
@@ -72,6 +126,89 @@
 							de.huxhorn.sulky.codec,
 							de.huxhorn.sulky.formatting,
 							de.huxhorn.sulky.io,
+							de.huxhorn.sulky.buffers,
+							de.huxhorn.sulky.conditions,
+							de.huxhorn.sulky.codec.filebuffer,
+							protobuf-java
+						</Embed-Dependency>
+						-->
+						<Embed-Dependency>
+							logback-core,
+							logback-classic,
+							logback-access,
+							looks,
+							stax-api,
+							stax,
+							de.huxhorn.lilith;inline=de/**,
+							de.huxhorn.lilith.jul.xml,
+							de.huxhorn.sulky.stax,
+							de.huxhorn.lilith.engine,
+							de.huxhorn.lilith.constants,
+							de.huxhorn.lilith.data.access.protobuf,
+							de.huxhorn.lilith.data.access,
+							httpclient,
+							de.huxhorn.sulky.swing,
+							de.huxhorn.sulky.generics,
+							de.huxhorn.lilith.prefs,
+							httpcore,
+							de.huxhorn.sulky.sounds-api,
+							glazedlists_java15,
+							de.huxhorn.sulky.sounds-impl-jlayer,
+							de.huxhorn.sulky.3rdparty.jlayer,
+							de.huxhorn.sulky.tasks,
+							de.huxhorn.lilith.3rdparty.flyingsaucer.core-renderer,
+							de.huxhorn.lilith.log4j.producer,
+							de.huxhorn.lilith.log4j.throwable,
+							de.huxhorn.sulky.buffers.table,
+							de.huxhorn.sulky.groovy,
+							de.huxhorn.lilith.logback.appender.multiplex-classic-xml,
+							de.huxhorn.lilith.data.logging-xml-serializer,
+							de.huxhorn.lilith.data.logging-xml,
+							de.huxhorn.lilith.data.eventsource-xml,
+							de.huxhorn.lilith.logback.producer.classic,
+							jcommander,
+							de.huxhorn.lilith.jul.xml-import,
+							de.huxhorn.lilith.xml-logging,
+							de.huxhorn.lilith.3rdparty.macify,
+							de.huxhorn.lilith.jul-slf4j-handler,
+							de.huxhorn.lilith.log4j.xml,
+							de.huxhorn.lilith.3rdparty.junique,
+							de.huxhorn.lilith.conditions,
+							de.huxhorn.lilith.json-logging,
+							de.huxhorn.lilith.data.logging-json-serializer,
+							jackson-mapper-lgpl,
+							jackson-core-lgpl,
+							de.huxhorn.lilith.logback.appender.multiplex-classic-json,
+							groovy,
+							antlr,
+							asm,
+							asm-commons,
+							asm-util,
+							asm-analysis,
+							asm-tree,
+							de.huxhorn.lilith.logback.appender.multiplex-access,
+							de.huxhorn.lilith.logback.access-adapter,
+							de.huxhorn.sulky.buffers.filtering,
+							de.huxhorn.lilith.logback.producer.access,
+							de.huxhorn.lilith.jul.xml.receiver,
+							de.huxhorn.lilith.sounds,
+							de.huxhorn.sulky.logging,
+							de.huxhorn.lilith.3rdparty.rrd4j,
+							de.huxhorn.lilith.3rdparty.jmdns,
+							de.huxhorn.lilith.data.eventsource,
+							de.huxhorn.lilith.data.logging,
+							de.huxhorn.lilith.data.logging.protobuf,
+							de.huxhorn.lilith.logback.appender.multiplex-classic,
+							de.huxhorn.lilith.logback.appender.multiplex-core,
+							de.huxhorn.lilith.logback.classic,
+							de.huxhorn.lilith.logback.logging-adapter,
+							de.huxhorn.lilith.sender,
+							de.huxhorn.sulky.codec,
+							de.huxhorn.sulky.formatting,
+							de.huxhorn.sulky.io,
+							de.huxhorn.sulky.buffers,
+							de.huxhorn.sulky.conditions,
+							de.huxhorn.sulky.codec.filebuffer,
 							protobuf-java
 						</Embed-Dependency>
 						<Include-Resource>
@@ -94,13 +231,27 @@
     </build>
 
     <dependencies>
-		<!-- 
+    	<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+		</dependency>
+    	<dependency>
+    		<groupId>org.apache.sling</groupId>
+    		<artifactId>org.apache.sling.commons.osgi</artifactId>
+    	</dependency>
+
+
+<!--  
         <dependency>
         	<groupId>de.huxhorn.lilith</groupId>
         	<artifactId>de.huxhorn.lilith</artifactId>
         	<version>0.9.41</version>
         </dependency>
-        -->
+        
 		<dependency>
     		<groupId>de.huxhorn.lilith</groupId>
     		<artifactId>de.huxhorn.lilith.data.eventsource</artifactId>
@@ -159,16 +310,423 @@
     		<artifactId>de.huxhorn.sulky.io</artifactId>
     		<version>0.9.14</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.buffers</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.conditions</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.codec.filebuffer</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+		
 		<dependency>
     		<groupId>com.google.protobuf</groupId>
     		<artifactId>protobuf-java</artifactId>
     		<version>2.3.0</version>
 		</dependency>
+-->
+        <dependency>
+    		<groupId>com.jgoodies</groupId>
+    		<artifactId>looks</artifactId>
+    		<version>2.2.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>stax</groupId>
+    		<artifactId>stax-api</artifactId>
+    		<version>1.0.1</version>
+		</dependency>
+        <dependency>
+    		<groupId>stax</groupId>
+    		<artifactId>stax</artifactId>
+    		<version>1.2.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.jul.xml</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.stax</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.engine</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.constants</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.access.protobuf</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.access</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.apache.httpcomponents</groupId>
+    		<artifactId>httpclient</artifactId>
+    		<version>4.1</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.swing</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.generics</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.prefs</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.apache.httpcomponents</groupId>
+    		<artifactId>httpcore</artifactId>
+    		<version>4.1</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.sounds-api</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>net.java.dev.glazedlists</groupId>
+    		<artifactId>glazedlists_java15</artifactId>
+    		<version>1.8.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.sounds-impl-jlayer</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.3rdparty.jlayer</artifactId>
+    		<version>1.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.tasks</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.3rdparty.flyingsaucer.core-renderer</artifactId>
+    		<version>8RC1</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.log4j.producer</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.log4j.throwable</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.buffers.table</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.groovy</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.appender.multiplex-classic-xml</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.logging-xml-serializer</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.logging-xml</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.eventsource-xml</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.producer.classic</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>com.beust</groupId>
+    		<artifactId>jcommander</artifactId>
+    		<version>1.17</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.jul.xml-import</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.xml-logging</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.3rdparty.macify</artifactId>
+    		<version>1.4</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.jul-slf4j-handler</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.log4j.xml</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.3rdparty.junique</artifactId>
+    		<version>1.0.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.conditions</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.json-logging</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.logging-json-serializer</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.codehaus.jackson</groupId>
+    		<artifactId>jackson-mapper-lgpl</artifactId>
+    		<version>1.7.1</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.codehaus.jackson</groupId>
+    		<artifactId>jackson-core-lgpl</artifactId>
+    		<version>1.7.1</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.appender.multiplex-classic-json</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>org.codehaus.groovy</groupId>
+    		<artifactId>groovy</artifactId>
+    		<version>1.8.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>antlr</groupId>
+    		<artifactId>antlr</artifactId>
+    		<version>2.7.7</version>
+		</dependency>
+        <dependency>
+    		<groupId>asm</groupId>
+    		<artifactId>asm</artifactId>
+    		<version>3.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>asm</groupId>
+    		<artifactId>asm-commons</artifactId>
+    		<version>3.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>asm</groupId>
+    		<artifactId>asm-util</artifactId>
+    		<version>3.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>asm</groupId>
+    		<artifactId>asm-analysis</artifactId>
+    		<version>3.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>asm</groupId>
+    		<artifactId>asm-tree</artifactId>
+    		<version>3.2</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.appender.multiplex-access</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.access-adapter</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.buffers.filtering</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.producer.access</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.jul.xml.receiver</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.sounds</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.logging</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.3rdparty.rrd4j</artifactId>
+    		<version>2.0.5</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.3rdparty.jmdns</artifactId>
+    		<version>3.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.eventsource</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.logging</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.data.logging.protobuf</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.appender.multiplex-classic</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.appender.multiplex-core</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.classic</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.logback.logging-adapter</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.lilith</groupId>
+    		<artifactId>de.huxhorn.lilith.sender</artifactId>
+    		<version>0.9.41</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.codec</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.formatting</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.io</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.buffers</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.conditions</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>de.huxhorn.sulky</groupId>
+    		<artifactId>de.huxhorn.sulky.codec.filebuffer</artifactId>
+    		<version>0.9.14</version>
+		</dependency>
+        <dependency>
+    		<groupId>com.google.protobuf</groupId>
+    		<artifactId>protobuf-java</artifactId>
+    		<version>2.3.0</version>
+		</dependency>
+        <dependency>
+    		<groupId>ch.qos.logback</groupId>
+    		<artifactId>logback-classic</artifactId>
+    		<version>0.9.28</version>
+		</dependency>
+        <dependency>
+    		<groupId>ch.qos.logback</groupId>
+    		<artifactId>logback-access</artifactId>
+    		<version>0.9.28</version>
+		</dependency>
+        <dependency>
+    		<groupId>ch.qos.logback</groupId>
+    		<artifactId>logback-core</artifactId>
+    		<version>0.9.28</version>
+		</dependency>
+
+
+
 
         <dependency>
         	<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.6.1</version>
         </dependency>
         <dependency>
         	<groupId>commons-io</groupId>
@@ -200,7 +758,8 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-		</dependency>
+		</dependency>		
+		
     </dependencies>
 </project>
 
