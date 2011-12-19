@@ -59,7 +59,7 @@ import de.huxhorn.sulky.buffers.BlockingCircularBuffer;
 
 @Component(immediate=true, metatype=true)
 @Properties(value={
-		@Property(name=LogbackLogger.PROP_LILITH_LOGRECEIVER, boolValue={true})
+		@Property(name=LogbackLogger.PROP_LILITH_LOGRECEIVER, boolValue={false})
 })
 public class LogbackLogger {
 
