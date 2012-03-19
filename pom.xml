@@ -109,6 +109,8 @@
 							org.joda.time.format;resolution:=optional,
 							org.sektor37.minium;resolution:=optional,
 							sun.nio.ch;resolution:=optional,
+							javax.servlet.jsp;resolution:=optional,
+							com.sun.image.codec.jpeg;resolution:=optional
 						</Import-Package>
 						<!--  
 						<Embed-Dependency>
