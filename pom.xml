@@ -24,10 +24,6 @@
 		<artifactId>org.liveSense.parent</artifactId>
 		<version>1-SNAPSHOT</version>
 	</parent>
-	<properties>
-		<lilith.version>0.9.41</lilith.version>
-		<sulky.version>0.9.14</sulky.version>
-	</properties>
 
 	<artifactId>org.liveSense.misc.log.lilith.core</artifactId>
 	<packaging>bundle</packaging>
