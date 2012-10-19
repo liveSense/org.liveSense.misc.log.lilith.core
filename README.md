@@ -1,0 +1,7 @@
+# [liveSense :: Misc :: Log :: Lilith Core - org.liveSense.misc.log.lilith.core](http://github.com/liveSense/org.liveSense.misc.log.lilith.core)
+## Description
+liveSense Lilith log core engine and log producer (for remote logging)
+## Exported packages
+## Dependencies
+## Embedded JARs
+* org.apache.sling.commons.osgi-2.1.0.jar* de.huxhorn.lilith.logback.producer.classic-0.9.41.jar* de.huxhorn.lilith.prefs-0.9.41.jar* de.huxhorn.lilith.engine-0.9.41.jar* de.huxhorn.lilith.constants-0.9.41.jar* de.huxhorn.lilith.data.access.protobuf-0.9.41.jar* de.huxhorn.lilith.data.access-0.9.41.jar* de.huxhorn.lilith.data.eventsource-0.9.41.jar* de.huxhorn.lilith.data.logging-0.9.41.jar* de.huxhorn.lilith.data.logging.protobuf-0.9.41.jar* de.huxhorn.lilith.logback.appender.multiplex-classic-0.9.41.jar* de.huxhorn.lilith.logback.appender.multiplex-core-0.9.41.jar* de.huxhorn.lilith.logback.classic-0.9.41.jar* de.huxhorn.lilith.logback.logging-adapter-0.9.41.jar* de.huxhorn.lilith.sender-0.9.41.jar* de.huxhorn.sulky.codec-0.9.14.jar* de.huxhorn.sulky.formatting-0.9.14.jar* de.huxhorn.sulky.io-0.9.14.jar* de.huxhorn.sulky.buffers-0.9.14.jar* de.huxhorn.sulky.conditions-0.9.14.jar* de.huxhorn.sulky.codec.filebuffer-0.9.14.jar* protobuf-java-2.3.0.jar* slf4j-simple-1.6.1.jar* log4j-over-slf4j-1.6.1.jar* jcl-over-slf4j-1.6.1.jar
