@@ -25,6 +25,11 @@
 		<version>2-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
+	<scm>
+		<connection>scm:git:https://github.com/liveSense/org.liveSense.misc.log.lilith.core.git</connection>
+		<developerConnection>scm:git:https://github.com/liveSense/org.liveSense.misc.log.lilith.core.git</developerConnection>
+		<url>https://github.com/liveSense/org.liveSense.misc.log.lilith.core</url>
+	</scm>
 
 	<artifactId>org.liveSense.misc.log.lilith.core</artifactId>
 	<packaging>bundle</packaging>
