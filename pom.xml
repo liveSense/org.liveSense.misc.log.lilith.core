@@ -22,9 +22,10 @@
 	<parent>
 		<groupId>com.github.livesense</groupId>
 		<artifactId>org.liveSense.parent</artifactId>
-		<version>2-SNAPSHOT</version>
+		<version>1.0.3</version>
 		<relativePath>..</relativePath>
 	</parent>
+    <version>1.0.3-SNAPSHOT</version>
 	<scm>
 		<connection>scm:git:https://github.com/liveSense/org.liveSense.misc.log.lilith.core.git</connection>
 		<developerConnection>scm:git:https://github.com/liveSense/org.liveSense.misc.log.lilith.core.git</developerConnection>
@@ -33,7 +34,6 @@
 
 	<artifactId>org.liveSense.misc.log.lilith.core</artifactId>
 	<packaging>bundle</packaging>
-	<version>0.9.42.1_1-SNAPSHOT</version>
 	<name>liveSense :: Misc :: Log :: Lilith Core</name>
 	<description>liveSense Lilith log core engine and log producer (for remote logging)</description>
 	<build>
